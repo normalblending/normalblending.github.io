@@ -7,6 +7,7 @@
             max-height: 95vh;
             max-width: 95vw;
             image-rendering: pixelated;
+            cursor: pointer;
 
         }
         
@@ -26,6 +27,18 @@
           flex-wrap: wrap;
           margin: 20px 0;
         }
+        li div img {
+          max-width: 200px;
+        }
+
+        @media (orientation: portrait) {
+          .video-container {
+            width: 100%;
+          } 
+          .video-container iframe {
+            width: 100%;
+          } 
+        }
     </style>
   </head>
 <body>
@@ -39,19 +52,6 @@
   г. Москва, 28 лет
 </p>
 
-
-<h1>О себе</h1>
-<p>
-  Работаю разработчиком интерфейсов веб сайтов. Программирование занимает большУю часть моей творческой деятельности, часто я занимаюсь созданием браузерных редакторов или программ которые позволяют создать визуальный, аудио или еще какого-нибудь типа объект (например сайт или веб игру). 
-Изучаю электронику, в частности программирование микроконтроллеров в составе таких аппаратных платформ как Arduino, Raspberry Pi, ESP32.
-Посредством Max MSP интегрирую проекты по электронике в процесс создания музыки в Ableton Live.
-Рисую обычно чёрными карандашами, графитовым карандашом или углём; приходилось рисовать на улице и в заброшенных помещениях.
-В Школу Родченко хочу поступить, чтобы заполнить пробелы в теоретических знаниях, познакомиться с единомышленниками и применить свои технические и творческие навыки в сфере современного искусства.
-
-</p>
-
-
-<br/>
 <h1>Работа №1</h1>
 <h2>AUP <br/>Браузерный полифонический синтезатор</h2>
 
@@ -172,7 +172,7 @@
 </h3>
 <h4>Видеообзор функций версии 0.20.1</h4>
 <p>Большинство функций актуальны для текущей версии</p>
-<div>
+<div class="video-container">
 <iframe style="max-width: 100%;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?si=nQyBsUacCi0BPE80&amp;list=PLXBS5wYv1UW21gCCmgLK3Png26TxQlaYG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
@@ -221,6 +221,8 @@
 <h3>Ссылки</h3>
 <p>
   <a href="../rasterscape_v24.0-beta/index.html">rasterscape v24.0-beta</a>
+  <br/>
+  Редактор не предназначен для использования на мобильных устройствах.
 </p>
 
   
@@ -237,7 +239,15 @@
   Графика без концептуальной ногарузки. Имеет личное символическое и эстетическое значение.<br/>
   Во вложении.
 </p>
+  
+<br/>
+<hr/>
 
+<br/>
+
+<p>
+2024г.
+</p>
 </div>
 
 <!-- <div id="imgModal" style=></div> -->
