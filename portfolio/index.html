@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+
+        img {
+            max-height: 95vh;
+            max-width: 95vw;
+            image-rendering: pixelated;
+
+        }
+        
+        #imgModal img {
+            width:100%;
+            height:100%;
+            /* height: auto; */
+            object-fit: contain;
+        }
+        #imgModal {
+            background: darkgray;
+        }
+        
+        li div {
+          display: flex;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          margin: 20px 0;
+        }
+    </style>
+  </head>
 <body>
 
 <div style="width: 890px; max-width: 100%;">
-<!-- <h1>Портфолио</h1>
-<h3>Кудрявцев Андрей</h3> -->
+<h1>Портфолио</h1>
+<!-- <h3>Кудрявцев Андрей</h3> -->
+
+<p>
+  Кудрявцев Андрей Алексеевич <br/>
+  г. Москва, 28 лет
+</p>
+
+
+<h1>О себе</h1>
+<p>
+  Работаю разработчиком интерфейсов веб сайтов. Программирование занимает большУю часть моей творческой деятельности, часто я занимаюсь созданием браузерных редакторов или программ которые позволяют создать визуальный, аудио или еще какого-нибудь типа объект (например сайт или веб игру). 
+Изучаю электронику, в частности программирование микроконтроллеров в составе таких аппаратных платформ как Arduino, Raspberry Pi, ESP32.
+Посредством Max MSP интегрирую проекты по электронике в процесс создания музыки в Ableton Live.
+Рисую обычно чёрными карандашами, графитовым карандашом или углём; приходилось рисовать на улице и в заброшенных помещениях.
+В Школу Родченко хочу поступить, чтобы заполнить пробелы в теоретических знаниях, познакомиться с единомышленниками и применить свои технические и творческие навыки в сфере современного искусства.
+
+</p>
+
 
 <br/>
 <h1>Работа №1</h1>
@@ -15,9 +60,6 @@
   <br/>
   2022г. 
 </p>
-
-Насчет инструментов
-
 
 <p>
 Интерфейс электронных музыкальных инструментов оказывает непосредственное влияени на то какая музыка с их помощью создается. 
@@ -121,12 +163,7 @@
   <li>Настраиваемые горячие клавиши позволяют изменять числовые параметры во время рисования.</li>
   <li>Нельзя выбрать цвет кисти.</li>
   <li>Контринтуитивный интерфейс.</li>
-  <li>Slitscan3D:
-    <ul>
-      <li>Алгоритм на основе классического slitscan.</li>
-      <li>N последник кадров полученных с камеры складываются в циклически заполняемую кубическую текстуру для изображения на канвасе её сечения поверхностью, которая может быть выражена математической формулой, rbga каналом изображения или линейчатой поверхностью на основе вводимого вручную одномерного массива.</li>
-    </ul>
-  </li>
+  <li>Slitscan3D (Алгоритм на основе классического slitscan, N последник кадров полученных с камеры складываются в циклически заполняемую кубическую текстуру для изображения на канвасе её сечения поверхностью, которая может быть выражена математической формулой, rbga каналом изображения или линейчатой поверхностью на основе вводимого вручную одномерного массива) </li>
 </ul>
 
 
@@ -139,19 +176,38 @@
 <iframe style="max-width: 100%;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?si=nQyBsUacCi0BPE80&amp;list=PLXBS5wYv1UW21gCCmgLK3Png26TxQlaYG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<h4>Отличия версии 24.0-beta</h4>
+<h4>Изменения версии 24.0-beta</h4>
 <ul>
   <li>
-    Slitscan3D: оптимизирован с использованием WebGl, доработан интерфейс интерфейс.
+    Slitscan3D: оптимизирован с использованием WebGl, доработан интерфейс.
+    <div>
+    <img src="files/screenshots/rs1.PNG"/>
+    <img src="files/screenshots/rs2.PNG"/>
+    </div>
   </li>
   <li>
     Доработан интерфейс повторов.
+    <div>
+    <img src="files/screenshots/rs3.PNG"/>
+    <img src="files/screenshots/rs4.PNG"/>
+    <img src="files/screenshots/rs5.PNG"/>
+    <img src="files/screenshots/rs6.PNG"/>
+  </div>
   </li>
   <li>
-    Кисть-Выделение.
+    Кисть-Выделение.<div>
+      <img src="files/screenshots/rs11.PNG"/>
+      <!-- <img src="files/screenshots/rs12.PNG"/> -->
+    </div>
   </li>
   <li>
-    Ручной ввод одномерных функции от координат и от времени.
+    Ручной ввод одномерных функций от координат и от времени.
+    <div>
+    <img src="files/screenshots/rs7.PNG"/>
+    <img src="files/screenshots/rs8.PNG"/>
+    <img src="files/screenshots/rs9.PNG"/>
+    <img src="files/screenshots/rs10.PNG"/>
+  </div>
   </li>
 </ul>
 
@@ -159,7 +215,7 @@
   Работы:
 </h3>
 <p>
-  <a href="../rasterscape_zine/index.html">zine</a>
+  <a href="../rasterscape_zine/index.html">веб-зин</a>
 </p>
 
 <h3>Ссылки</h3>
@@ -174,38 +230,84 @@
 <br/>
 <h1>Работа №3</h1>
 <h2>
-  Графика
-</h2>
-
-<p>
+  Графика<br/>
   2023г. 
+</h2>
+<p>
+  Графика без концептуальной ногарузки. Имеет личное символическое и эстетическое значение.<br/>
+  Во вложении.
 </p>
 
 </div>
 
 <!-- <div id="imgModal" style=></div> -->
 
+  
 <script>
-  const img = document.createElement('img');
-  img.style = "position: fixed; width: 100vw; height: 100vh; top: 0;left: 0; pointer-events: none; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,.4); opacity: 0;"
-  document.append(img);
-  document.querySelectorAll('img').forEach(img => img.addEventListener('click', (e) => {
+  const imgModal = document.createElement('div');
+  imgModal.id = 'imgModal'
+ imgModal.style = "position: fixed; width: 100vw; height: 100vh; top: 0;left: 0; pointer-events: none; display: flex; align-items: center; justify-content: center;  opacity: 0;"
+ document.body.append(imgModal);
 
-    const img = document.createElement('img')
-    img.src = e.srcElement.src;
-    img.style.maxWidth = '100vw'
-    img.style.maxHeight = '100vh'
+ let currentImageIndex;
 
-    document.querySelector('#imgModal').append(img)
-    document.querySelector('#imgModal').style.pointerEvents = 'all';
-    document.querySelector('#imgModal').style.opacity = '1';
-  }))
+ const allImages = document.querySelectorAll('img');
 
-  document.querySelector('#imgModal').addEventListener('click', () => {
-    document.querySelector('#imgModal').innerHTML = '';
-    document.querySelector('#imgModal').style.pointerEvents = 'none';
-    document.querySelector('#imgModal').style.opacity = '0';
-  })
+  
+ const scroll = (img) => {
+       img.scrollIntoView();
+       window.scrollBy(0, document.body.scrollTop - window.innerHeight / 2 + img.height / 2);
+   } 
+
+ allImages.forEach((img, index) => img.addEventListener('click', (e) => {
+
+   
+   currentImageIndex = index;
+   
+   imgModal.append(img.cloneNode())
+   imgModal.style.pointerEvents = 'all';
+   imgModal.style.opacity = '1'
+
+   scroll(img);
+
+
+ }))
+
+ document.addEventListener('keydown', (e) => {
+
+  
+   const d = (dd) => {
+       if (imgModal.innerHTML === '') return;
+       e.preventDefault();
+      const img = allImages[currentImageIndex + dd];
+      if (img) {
+       scroll(img);
+
+       img.scrollIntoView();
+       imgModal.innerHTML = '';
+
+       imgModal.append(img.cloneNode())
+       currentImageIndex += dd
+      }
+   }
+
+   if (e.keyCode == '38' || e.keyCode == '37') {
+       d(-1);
+   } else if (e.keyCode == '40' || e.keyCode == '39') {
+      d(1)
+   }
+
+ })
+
+ imgModal.addEventListener('click', () => {
+   
+   scroll(allImages[currentImageIndex]);
+   imgModal.innerHTML = '';
+   imgModal.style.pointerEvents = 'none';
+   imgModal.style.opacity = '0';
+   
+   currentImageIndex = null;
+ })
 
 
 </script>
