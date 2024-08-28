@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+        img {
+            max-height: 95vh;
+            max-width: 95vw;
+            image-rendering: pixelated;
+
+        }
+        body {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 50vh 0;
+
+            background: lightgrey;
+        }
+
+        div {
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column-reverse;
+            max-width: 100%;
+            width: 100%;
+            gap: 50vh;
+        }
+
+        div span {
+            display: flex;
+            max-width: 100%;
+            gap: 30px;
+            position: relative;
+            justify-content: center;
+        }
+
+        div span img {
+            max-width: 100%;
+            width: auto;
+            flex: 0 0 auto;
+            max-height: 98vh;
+            
+            border: 1px solid;
+            border-top-color: #a4a4a4;
+            border-bottom-color: #edecec;
+            border-right-color: #dfdede;
+            border-left-color: #b8b8b8;
+        }
+        div span p {
+            position: absolute;
+            top: 100%;
+            opacity: 0.4;
+            width: 100%;
+            display: none;
+        }
+        
+        @media (orientation: landscape) {
+            div span {
+                flex-direction: row-reverse;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+
+
+        }
+
+        @media (orientation: portrait) {
+            div span {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+        }
+
+
+        #imgModal img {
+            width:100%;
+            height:100%;
+            /* height: auto; */
+            object-fit: contain;
+        }
+        #imgModal {
+            background: darkgray;
+        }
+        
+
+    </style>
+<body>
+    <div>
+        <span>
+            <img src="img/zZZzzZZzZ (49).png"/>
+            <img src="img/ZzzzzzZzz (1).jpg"/>
+            <p>untitled, 2019</p>
+        </span>
+
+        <!-- <span>
+            <img src="img/zZZzZZZz (49).png"/>
+            <img src="img/ZzzzZZZz (50).png"/>
+            <p>untitled, 2019</p>
+        </span> -->
+        <!-- <span>
+            <img src="img/ZZZzzZz (9).jpg"/>
+            <img src="img/zZZzzZ (2).jpg"/>
+            <p>untitled, 2019</p>
+        </span> -->
+        <span>
+            <img src="img/zzzsszSzzzzzzszszsSSs.png"/>
+            <img src="img/zzSzzszzzzSzzzzzzzzzz.png"/>
+            <p>untitled, 2019</p>
+        </span>
+        <span>
+            <img src="img/s2srs2sss22sDs22ssDrr.png"/>
+            <img src="img/s2srs2sss22sDr2ss2sDr.png"/>
+            <p>untitled, 2019</p>
+        </span>
+        <!-- <span>
+            <img src="img/sskiizkikkkizzizzzssz.png"/>
+            <img src="img/sskiizsksziszsksziisz.png"/>
+            <p>бесшовные текстуры, 2019</p>
+        </span> -->
+        <span>
+            <img src="img/sskiisizkkkisiiiizzki.png"/>
+            <img src="img/sskiisizkkkiskzikzksk.png"/>
+            <p>untitled, 2020</p>
+        </span>
+        <span>
+            <img src="img/sskiikikiksizsksikksz.png"/>
+            <img src="img/sskiikikikkzzkzzkkzzk.png"/>
+            <p>untitled, 2020</p>
+        </span>
+        <span>
+            <img src="img/sskiikiikszsszkikikzs.png"/>
+            <img src="img/sskiikiikszssizisskki.png"/>
+            <img src="img/sskiikiiksziiizkikkiz.png"/>
+            <p>untitled, 2020</p>
+        </span>
+        
+        <span>
+            <img src="img/sskiiizsziziikzizkkzi.png"/>
+            <img src="img/sskiiizsziskisssssskz.png"/>
+            <img src="img/sskiikikzsizziikszkkz.png"/>
+            <p>untitled, 2020</p>
+        </span>
+        <span>
+            <img src="img/sskiiiizizsksiskkzkiz.png"/>
+            <img src="img/ssizzszikzkiisszsszis.png"/>
+            <img src="img/ssizzszikzkiiiizkiksk.png"/>
+            <img src="img/sskiiiizizsskikiiskks.png"/>
+            <p>chessboard, 2020</p>
+        </span>
+        <span>
+            <img src="img/ssizzskszkkkszkskzssz.png"/>
+            <img src="img/ssizzsskkzkkiziiziziz.png"/>
+            <p>untitled, 2020</p>
+        </span>
+        <span>
+            <img src="img/ssizzskszksisissszzss.png"/>
+            <img src="img/ssizzskszkkzziizzzzii.png"/>
+            <p>untitled, 2020</p>
+        </span>
+
+        
+        <span>
+            <img src="img/ssizsksisszikssskkzki.png"/>
+            <p>untitled, 2020</p>
+        </span>
+
+<!--         
+        <span>
+            <img src="img/ssizsiskiskkzkziiskzi.png"/>
+            <img src="img/ssizsiskiskkskizkkkis.png"/>
+            <p>untitled, 2020</p>
+        </span> -->
+
+        
+        <!-- кольца? -->
+        <span>
+            <!-- <img src="img/ssiszsziissizzkiksksi.png"/> -->
+            <img src="img/ssD2r2rDssrsDDD2rDsrs.png"/>
+            <p>untitled, 2020</p>
+        </span>
+
+        <!-- два пейзажа -->
+        <span>
+            <img src="img/ssiszsszzzzsssikkziis.png"/>
+            <img src="img/ssiszsszzzzsszkkssksk.png"/>
+            <img src="img/ssiszizskzkiiiksszisz.png"/>
+            <p>untitled, 2020</p>
+        </span>
+        <!-- точки -->
+        <!-- <span>
+            
+            <p>untitled, 2020</p>
+        </span> -->
+
+        
+        <span>
+            <img src="img/ssisszzzikkkkikzsiksk.png"/>
+            <img src="img/ssisszzzikkksikkikzsz.png"/>
+            <p>untitled, 2020</p>
+        </span>
+        
+        
+        <span>
+            <img src="img/ssDssD2rsrDDDrDDDrsrD.png"/>
+            <img src="img/ssDssDsrssDs2rrrss2D2.png"/>
+            <p>untitled, 2020</p>
+        </span>
+
+        
+        
+        <span>
+            <img src="img/ssDssD2rsDDsrD222rD2s.png"/>
+            <img src="img/ssDssD2rsDDs222sDrDs2.png"/>
+            <p>untitled, 2020</p>
+        </span>
+
+        <!-- двери -->
+        
+        <span>
+            <img src="img/ssDDssr2sDsD22rDDs222.png"/>
+            <img src="img/ssDDssr2sD2s2s2rD2srD.png"/>
+            <p>untitled, 2021</p>
+        </span>
+
+        
+        <span style="gap: 20px; max-width: calc(400px * 3 + 20px * 2);">
+            <img src="img/ssDDsDDrs2rrsD2r22rss.png"/>
+            <img src="img/ssDDsDDrssssr2rrrrssD.png"/>
+            
+            
+            <img src="img/ssDDsDDrs2rrDr22rD2s2.png"/>
+            <img src="img/ssDDsDDrs2rrD2DDDrrss.png"/>
+            <img src="img/ssDDsDDrsssrD2rs22D2s.png"/>
+            <img src="img/ssDDsDDrs2rr22rrDDrsD.png"/>
+            <p>mystery spiral shore, 2021</p>
+        </span>
+
+        
+        <span>
+            <img src="img/ssDDsD2Dr2sDsDrr2ssDs.png"/>
+            <img src="img/ssDDsD2D2DsDDsssrsrrs.png"/>
+            <p>untitled, 2021</p>
+        </span>
+
+        
+        <!-- <span style="gap: 5px; max-width: calc(400px * 4 + 10px * 3);">
+            < !-- <img src="img/ssDDsD2D2D2srr2DD22D2.png"/> -- >
+            <img src="img/ssDDsD2D2D2srDs22Dr22.png"/>
+            < !-- <img src="img/ssDDsD2D2D2sr2sD2Dr2s.png"/> -- >
+            < !-- <img src="img/ssDDsD2D2D2sr2r22DrDD.png"/> -- >
+            <img src="img/ssDDsD2D2D2sDDsDrDsrs.png"/>
+            <img src="img/ssDDsD2D2D2sD22Ds2D22.png"/>
+            <img src="img/ssDDsD2D2D2s2r2ss2s22.png"/>
+            <p>untitled, 2021</p>
+        </span> -->
+
+        
+        <!-- <span>
+            <img src="img/ssD2ssDDDsssr2sDrs2DD.png"/>
+            <p>untitled, 2021</p>
+        </span>
+         -->
+
+        <span>
+            <img src="img/ssD2s2DrsrDss2srrsrDr.png"/>
+            <p>recursive, 2021</p>
+        </span>
+
+        <!-- <span>
+            <img src="img/ssD2s2DrDsrrDDs2D2Drr.png"/>
+            <img src="img/ssD2s2DrDssrDDsDD2ssr.png"/>
+            <p>recursive, 2021</p>
+        </span> -->
+        
+        <span>
+            <img src="img/ssD2s2DrDrDssDD22s2rr.png"/>
+            <img src="img/ssD2s2DrDrDsssrrD2s2r.png"/>
+            <img src="img/ssD2s2DrDrDsrDDDDssDD.png"/>
+            <p>untitled, 2021</p>
+        </span>
+        <span>
+            <img src="img/ssD2rs2sr22ss2sD2rrsD.png"/>
+            <p>untitled, 2021</p>
+        </span>
+
+        <span style="max-width: calc(600px * 2 + 40px);">
+            <img src="img/s2srrDsDDsrDrsrsDs2DD.png"/>
+            <img src="img/s2srrDsDDsrDrrDrDDDs2.png"/>
+            <img src="img/s2srrDsDDsrDrrDDDr2rD.png"/>
+            <img src="img/s2srrDsDDsrDrr222rDsD.png"/>
+            <p>untitled, 2024</p>
+        </span>
+        <span>
+            <img src="img/s2srrDrrsD22Drs22rr22.png"/>
+            <img src="img/s2srrDrrsD22r22s2ssrD.png"/>
+            <img src="img/s2srrDrrsDsDDDrrrrs2s.png"/>
+            <p>untitled, 2024</p>
+        </span>
+        <!-- <span>
+            <img src="img/s2srrDDsrDD2rrD2r2r2s.png"/>
+            <p>untitled, 2024</p>
+        </span> -->
+
+        
+        <span>
+            <img src="img/s2srrDrrsDrDrr2rDrDrr.png"/>
+            <img src="img/s2srrDrrsDrsDrDsD2rrr.png"/>
+            <img src="img/s2srrDrrsDs2DD2Drsr2s.png"/>
+            <img src="img/s2srrDrrsDs2DsD2srr2r.png"/>
+            <p>untitled, 2024</p>
+        </span>
+        <span>
+            <img src="img/UBOA4648.PNG"/>
+            <img src="img/GQBG5367.PNG"/>
+            <img src="img/TMBC4549.PNG"/>
+            <img src="img/GQXQ9053.PNG"/>
+
+            <img src="img/OQYA8319.PNG"/>
+            <img src="img/AZJB1259.PNG"/>
+            <img src="img/TKYK9569.PNG"/>
+
+            <img src="img/EPJN3627.PNG"/>
+            <img src="img/RZYD0124.PNG"/>
+            <p>untitled, 2024</p>
+        </span>
+
+        
+        <span>
+            <img src="img/s2rssrrDrrDDDrD2D2Dr2.jpeg"/>
+            <img src="img/s2rssrrDrrDDDsrs2rr2s.jpeg"/>
+            <p>untitled, 2024</p>
+        </span>
+
+        
+        <span>
+            <img src="img/s2srs2ss2sDss22srsrsD.png"/>
+            <p>untitled, 2024</p>
+        </span>
+        
+    </div>
+    
+    
+<script>
+   const imgModal = document.createElement('div');
+   imgModal.id = 'imgModal'
+  imgModal.style = "position: fixed; width: 100vw; height: 100vh; top: 0;left: 0; pointer-events: none; display: flex; align-items: center; justify-content: center;  opacity: 0;"
+  document.body.append(imgModal);
+
+  let currentImageIndex;
+
+  const allImages = document.querySelectorAll('img');
+
+   
+  const scroll = (img) => {
+        img.scrollIntoView();
+        window.scrollBy(0, document.body.scrollTop - window.innerHeight / 2 + img.height / 2);
+    } 
+
+  allImages.forEach((img, index) => img.addEventListener('click', (e) => {
+
+    
+    currentImageIndex = index;
+    
+    imgModal.append(img.cloneNode())
+    imgModal.style.pointerEvents = 'all';
+    imgModal.style.opacity = '1'
+
+    scroll(img);
+
+
+  }))
+
+  document.addEventListener('keydown', (e) => {
+
+   
+    const d = (dd) => {
+        if (imgModal.innerHTML === '') return;
+        e.preventDefault();
+        // up arrow
+       // left arrow
+       const img = allImages[currentImageIndex + dd];
+       if (img) {
+        scroll(img);
+
+        img.scrollIntoView();
+        imgModal.innerHTML = '';
+
+        imgModal.append(img.cloneNode())
+        currentImageIndex += dd
+       }
+    }
+
+    if (e.keyCode == '38' || e.keyCode == '37') {
+        d(1);
+
+
+    }
+    else if (e.keyCode == '40' || e.keyCode == '39') {
+       d(-1)
+
+    }
+
+  })
+
+  imgModal.addEventListener('click', () => {
+    
+    scroll(allImages[currentImageIndex]);
+    imgModal.innerHTML = '';
+    imgModal.style.pointerEvents = 'none';
+    imgModal.style.opacity = '0';
+    
+    currentImageIndex = null;
+  })
+
+
+</script>
+</body>
+</html>

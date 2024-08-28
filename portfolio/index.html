@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="width: 890px; max-width: 100%;">
+<!-- <h1>Портфолио</h1>
+<h3>Кудрявцев Андрей</h3> -->
+
+<br/>
+<h1>Работа №1</h1>
+<h2>AUP <br/>Браузерный полифонический синтезатор</h2>
+
+<p>
+  Typescript, React, ToneJS
+  <br/>
+  2022г. 
+</p>
+
+Насчет инструментов
+
+
+<p>
+Интерфейс электронных музыкальных инструментов оказывает непосредственное влияени на то какая музыка с их помощью создается. 
+Некоторые музыкальные стили были определены конкретными музыкальными инструментами, и их интерфейс не в последнюю очередь повлиял на то, как звучит созданная с его помощью музыка. 
+<br/>
+Синтезатор AUP был создан, чтобы проверить, как его особенности интерфейса повлияют на издаваемый им звук. 
+</p>
+
+<h3>Особенности интерфейса</h3>
+
+<ul>
+<li>Новый осциллятор может быть добавлен нажатием на крайнюю справа кнопку [ + ].</li>
+
+<li>Осциллятор может быть активирован кнопкой осциллятора [▯(1)] или клавишей клавиатуры, соответствующей цифре в скобках на кнопке осциллятора. При зажатой клавише shift активность осциллятора будет зафиксирована в выбранном положении.
+</li>
+<li>
+  Нажатием на [ + ] под кнопкой осциллятора можно добавить строку изменения параметра осциллятора, 
+  которая состоят из:
+  <ul>
+    <li>элемента выбора параметра для изменения;</li>
+    <li>элемента для ввода значения параметра;</li>
+    <li>кнопки [_(q)], нажатие на которую (или соответствующую букве в скобках клавишу на клавиатуре) применяет введенное значение для параметра осциллятора.</li>
+  </ul>
+</li>
+<li>
+  Клавишами стрелок можно изменять отступ управляющих клавиш клавиатуры.
+</li>
+
+</ul>
+
+
+<h3>Особенности синтеза</h3>
+<ul>
+  <li>Четыре типа волны: синус, пила, треугольник, квадрат.</li>
+  <li>ADSR-фильтр.</li>
+  <li>Волна осциллятора и его ADSR-фильтр могут быть использованы для модуляции параметров.</li>
+</ul>
+
+<h3>Галерея</h3>
+
+<div style="padding: 0 30px; display: flex; flex-direction: column; gap: 20px">
+
+<img src="files/screenshots/aup1.PNG" style="max-width: 100%; height: auto;"/>
+<img src="files/screenshots/aup2.PNG" style="max-width: 100%; height: auto;"/>
+<img src="files/screenshots/aup3.PNG" style="max-width: 100%; height: auto;"/>
+<img src="files/screenshots/aup4.PNG" style="max-width: 100%; height: auto;"/>
+<img src="files/screenshots/aup5.PNG" style="max-width: 100%; height: auto;"/>
+<img src="files/screenshots/aup6.PNG" style="max-width: 100%; height: auto;"/>
+<img src="files/screenshots/aup7.PNG" style="max-width: 100%; height: auto;"/>
+</div>
+
+
+<h3>Управление</h3>
+<p>
+  Интуитивно (для автора) напрашивающийся способ управления синтезатором сосотоит из этапов подготовки осцилляторов и непоредственно игры при помощи клавиатуры. 
+  Отсутствие секвенсора позволяет проявиться собственному ритму пользователя, а большое количество осцилляторов и их комбинаций дают широкий диапазон звучаний.
+</p>
+
+<h3>Ссылки</h3>
+<p>
+  <a href="../aup_v2.1/index.html">aup v2.1</a>
+</p>
+
+<br/>
+<hr/>
+
+<br/>
+<h1>Работа №2</h1>
+<h2>
+  <!-- <img src="favicon.ico" /> -->
+  Rasterscape 
+  <br/>
+  Растровый графический редактор
+</h2>
+
+<p>
+  Typescript, React, Redux, WebGL, SVG
+  <br/>
+  2019-2024гг. 
+</p>
+<h3>
+Задачи
+</h3>
+<ul>
+  <li>Смешение цифровой живописи с алгоритмической графикой.</li>
+    <ul>
+      <li>Возможноть создавать изображения с помощью алгоритмов генеративной графики, параметры которых так или иначе привязаны к пользовательскому вводу (мышь, клавиатура, камера).</li>
+    </ul>
+    <li>Заменить случайность на пользовательский ввод для увеличения физического влияния пользователя на генерируемый объект.</li>
+  
+  <ul>
+    <li>Схематическая имитация собственных патернов рисования на физических носителях</li>
+  </ul>
+</ul>
+   
+<h3>
+Особенности
+</h3>
+<ul>
+  <li>Модуляция числовых параметров с помощью волновых функций или вводимого пользователем массива чисел.</li>
+  <li>Настраиваемые горячие клавиши позволяют изменять числовые параметры во время рисования.</li>
+  <li>Нельзя выбрать цвет кисти.</li>
+  <li>Контринтуитивный интерфейс.</li>
+  <li>Slitscan3D:
+    <ul>
+      <li>Алгоритм на основе классического slitscan.</li>
+      <li>N последник кадров полученных с камеры складываются в циклически заполняемую кубическую текстуру для изображения на канвасе её сечения поверхностью, которая может быть выражена математической формулой, rbga каналом изображения или линейчатой поверхностью на основе вводимого вручную одномерного массива.</li>
+    </ul>
+  </li>
+</ul>
+
+
+<h3>
+  Обзор функций
+</h3>
+<h4>Видеообзор функций версии 0.20.1</h4>
+<p>Большинство функций актуальны для текущей версии</p>
+<div>
+<iframe style="max-width: 100%;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?si=nQyBsUacCi0BPE80&amp;list=PLXBS5wYv1UW21gCCmgLK3Png26TxQlaYG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<h4>Отличия версии 24.0-beta</h4>
+<ul>
+  <li>
+    Slitscan3D: оптимизирован с использованием WebGl, доработан интерфейс интерфейс.
+  </li>
+  <li>
+    Доработан интерфейс повторов.
+  </li>
+  <li>
+    Кисть-Выделение.
+  </li>
+  <li>
+    Ручной ввод одномерных функции от координат и от времени.
+  </li>
+</ul>
+
+<h3>
+  Работы:
+</h3>
+<p>
+  <a href="../rasterscape_zine/index.html">zine</a>
+</p>
+
+<h3>Ссылки</h3>
+<p>
+  <a href="../rasterscape_v24.0-beta/index.html">rasterscape v24.0-beta</a>
+</p>
+
+  
+<br/>
+<hr/>
+
+<br/>
+<h1>Работа №3</h1>
+<h2>
+  Графика
+</h2>
+
+<p>
+  2023г. 
+</p>
+
+</div>
+
+<!-- <div id="imgModal" style=></div> -->
+
+<script>
+  const img = document.createElement('img');
+  img.style = "position: fixed; width: 100vw; height: 100vh; top: 0;left: 0; pointer-events: none; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,.4); opacity: 0;"
+  document.append(img);
+  document.querySelectorAll('img').forEach(img => img.addEventListener('click', (e) => {
+
+    const img = document.createElement('img')
+    img.src = e.srcElement.src;
+    img.style.maxWidth = '100vw'
+    img.style.maxHeight = '100vh'
+
+    document.querySelector('#imgModal').append(img)
+    document.querySelector('#imgModal').style.pointerEvents = 'all';
+    document.querySelector('#imgModal').style.opacity = '1';
+  }))
+
+  document.querySelector('#imgModal').addEventListener('click', () => {
+    document.querySelector('#imgModal').innerHTML = '';
+    document.querySelector('#imgModal').style.pointerEvents = 'none';
+    document.querySelector('#imgModal').style.opacity = '0';
+  })
+
+
+</script>
+</body>
+</html>
