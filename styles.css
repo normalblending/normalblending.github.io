@@ -1,0 +1,10 @@
+summary {
+    cursor: pointer;
+    /* background: pink; */
+    /* color: red; */
+    padding: 10px 0px;
+}
+
+details div {
+    padding-bottom: 20px;
+}
